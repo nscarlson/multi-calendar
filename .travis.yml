@@ -3,10 +3,11 @@ go:
   - 1.4
   - 1.5
   - tip
-
 install:
   - go get github.com/onsi/ginkgo
   - go get github.com/onsi/gomega
-
 script:
   - go test ./hebrew/...
+notifications:
+  slack:
+    secure: 46XI9HCcoPqG2+rKnemEHa9keB2a8jwQjwspsklWbYfqHagNFmhb6OQXG418n5RPScjAceCtBh5qlR9KAfcPWMIKEGIgsO0nJKez8EZR+BN5TLsxu3rzlO38pHsl4ZX045zIIlNx+5LehWWpFbg+8xYFESaSXNxiO40CVPiJ+4fbbsVCROVNxms01YDnFCfMPHbCATpgCxKzG9C2rnyTD1DU9RzCyKSxRlALzaIJ8vZE1PJ1FdV2EEn3oOXAaIoWusMVKfxVZgHgHvGp4ftRpHEMhWAZVI0scHxOwi5uuzJ5wg92lUFtYV3oTSVPUTOyFdstZqNM+On6oqsuqUMnjHbNwnphXUM3EKTHfMUgAK/XOVOyOz0NhuRtsBoT3TMXWc+lNUmSQGf2e6x1mJ4qK5IRvXytyKcb3s3JmBREU/MtIgSe6EW/vMAzXYr4UhQLOkAtRgaG/oKCsib1MDAeaU1gmx9kEtcHkaTM24JS5GHSLhGW/jhesbaWmnTF8RfDVH/MlS9zogcDWBvVi1A8NFrabdsUwTlckvAIuTvCBT7yLoUrxZlfGKqk+uG6b/sk4KfqN0HM+ayqmfufBbJTy4fIXqdDgmvUBSbqZWYZnObp1JT3O23Bwf1qO8W3Cwvu1Lef3zPAHfGC5fu2Y3k/+VxJVAh7mNnBbXGjurd1Ygk=
